@@ -1,0 +1,1093 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ========================================================= -->
+    <!-- PREMIUM PERSONAL PORTFOLIO FOR KENNY                     -->
+    <!-- FULL REPLACEMENT HTML FILE                               -->
+    <!-- ========================================================= -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kenny Richard | Premium Frontend Portfolio</title>
+    <meta
+      name="description"
+      content="Premium personal portfolio for Kenny Richard, a frontend developer with an accounting background building elegant, conversion-focused digital experiences."
+    />
+    <meta
+      name="keywords"
+      content="Kenny Richard, frontend developer, portfolio, HTML, CSS, JavaScript, Lagos, web developer, accounting to tech"
+    />
+    <meta name="author" content="Kenny Richard" />
+    <meta
+      property="og:title"
+      content="Kenny Richard | Premium Frontend Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="A premium personal portfolio showing Kenny's projects, services, skills, process, testimonials, and contact information."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+    />
+    <meta name="theme-color" content="#0b0d12" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========================================================= -->
+    <!-- DECORATIVE LAYERS                                         -->
+    <!-- ========================================================= -->
+    <div class="page-loader" id="pageLoader" aria-hidden="true">
+      <div class="page-loader__inner">
+        <div class="page-loader__logo">KR</div>
+        <p class="page-loader__text">Loading Kenny’s Portfolio</p>
+      </div>
+    </div>
+
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div class="ambient-noise" aria-hidden="true"></div>
+    <div class="floating-lines" aria-hidden="true"></div>
+
+    <!-- ========================================================= -->
+    <!-- HEADER                                                    -->
+    <!-- ========================================================= -->
+    <header class="site-header" id="top">
+      <div class="container">
+        <nav class="navbar" aria-label="Main navigation">
+          <a href="#top" class="brand">
+            <span class="brand__mark">KR</span>
+            <span class="brand__text">
+              <span class="brand__name">Kenny Richard</span>
+              <span class="brand__role">Frontend Developer</span>
+            </span>
+          </a>
+
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-expanded="false"
+            aria-controls="navMenu"
+            aria-label="Open navigation menu"
+          >
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="nav-panel" id="navMenu">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#proof">Proof</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+
+            <div class="nav-cta">
+              <a href="#contact" class="btn btn--primary btn--small">Hire Me</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- MAIN                                                      -->
+    <!-- ========================================================= -->
+    <main>
+      <!-- ======================================================= -->
+      <!-- HERO                                                    -->
+      <!-- ======================================================= -->
+      <section class="hero section" id="hero">
+        <div class="hero__background" aria-hidden="true">
+          <div class="hero__orb hero__orb--one"></div>
+          <div class="hero__orb hero__orb--two"></div>
+          <div class="hero__orb hero__orb--three"></div>
+          <div class="hero__grid"></div>
+        </div>
+
+        <div class="container hero__content">
+          <div class="hero__copy reveal">
+            <p class="eyebrow" id="typedEyebrow">
+              Frontend Developer • Accounting Precision • Clean UI
+            </p>
+
+            <h1 class="hero__title">
+              I build
+              <span class="gradient-text">premium websites</span>
+              that help businesses look credible, modern, and ready for serious
+              clients.
+            </h1>
+
+            <p class="hero__text">
+              I’m Kenny Richard — a frontend developer with an accounting
+              background, combining structure, precision, and practical thinking
+              to build elegant, responsive, high-converting digital experiences.
+            </p>
+
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn--primary">View My Projects</a>
+              <a href="#contact" class="btn btn--secondary"
+                >Let’s Work Together</a
+              >
+            </div>
+
+            <div class="hero__mini-proof">
+              <article class="proof-chip">
+                <span class="proof-chip__number">Responsive</span>
+                <span class="proof-chip__label">Mobile-first layouts</span>
+              </article>
+              <article class="proof-chip">
+                <span class="proof-chip__number">Modern</span>
+                <span class="proof-chip__label">Elegant UI systems</span>
+              </article>
+              <article class="proof-chip">
+                <span class="proof-chip__number">Practical</span>
+                <span class="proof-chip__label">Real-world solutions</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal">
+            <div class="hero-card hero-card--main tilt-card">
+              <div class="hero-card__top">
+                <span class="hero-card__badge">Premium Portfolio</span>
+                <span class="hero-card__badge hero-card__badge--muted"
+                  >2026</span
+                >
+              </div>
+
+              <div class="hero-card__middle">
+                <div class="hero-card__avatar">
+                  <span>K</span>
+                </div>
+                <div class="hero-card__meta">
+                  <h2>Kenny Richard</h2>
+                  <p>Frontend Developer • UI-focused • Problem Solver</p>
+                </div>
+              </div>
+
+              <div class="hero-card__stats">
+                <div class="hero-stat">
+                  <strong>10+</strong>
+                  <span>Portfolio-quality project concepts</span>
+                </div>
+                <div class="hero-stat">
+                  <strong>Fast</strong>
+                  <span>Performance-aware implementation</span>
+                </div>
+                <div class="hero-stat">
+                  <strong>Clean</strong>
+                  <span>Readable code and maintainable design</span>
+                </div>
+              </div>
+
+              <div class="hero-card__footer">
+                <span class="status-dot"></span>
+                <span>Available for freelance and remote opportunities</span>
+              </div>
+            </div>
+
+            <div class="floating-panel floating-panel--one tilt-card">
+              <p>Conversion-focused interfaces</p>
+            </div>
+
+            <div class="floating-panel floating-panel--two tilt-card">
+              <p>Elegant frontend execution</p>
+            </div>
+
+            <div class="floating-panel floating-panel--three tilt-card">
+              <p>Accounting mindset, tech delivery</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__scroll">
+          <a href="#about" aria-label="Scroll to about section">
+            <span>Scroll</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- TRUST BAR                                                -->
+      <!-- ======================================================= -->
+      <section class="trust-strip">
+        <div class="trust-strip__track">
+          <span>Frontend Development</span>
+          <span>Responsive Design</span>
+          <span>Premium Portfolio UI</span>
+          <span>Business Websites</span>
+          <span>Landing Pages</span>
+          <span>Modern HTML CSS JavaScript</span>
+          <span>Frontend Development</span>
+          <span>Responsive Design</span>
+          <span>Premium Portfolio UI</span>
+          <span>Business Websites</span>
+          <span>Landing Pages</span>
+          <span>Modern HTML CSS JavaScript</span>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- ABOUT                                                   -->
+      <!-- ======================================================= -->
+      <section class="section section--dark" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About Me</p>
+            <h2>
+              I moved from accounting into tech, and that shift gave me a unique
+              edge: structure, patience, attention to detail, and a stronger
+              focus on practical results.
+            </h2>
+          </div>
+
+          <div class="about-layout">
+            <div class="about-story reveal">
+              <article class="glass-card">
+                <h3>My Story</h3>
+                <p>
+                  My background in accounting trained me to be precise,
+                  organized, and analytical. When I stepped into tech, I carried
+                  those strengths with me. Today, I apply that same discipline
+                  to building polished digital products that are clear,
+                  responsive, and user-focused.
+                </p>
+                <p>
+                  I enjoy creating interfaces that look premium, feel smooth,
+                  and communicate professionalism. My goal is simple: help
+                  people and brands present themselves better online.
+                </p>
+              </article>
+
+              <article class="glass-card">
+                <h3>What Makes Me Different</h3>
+                <ul class="feature-list">
+                  <li>Strong eye for clean structure and visual balance</li>
+                  <li>
+                    Business-minded approach from an accounting background
+                  </li>
+                  <li>
+                    Focus on credibility, trust, and practical client outcomes
+                  </li>
+                  <li>
+                    Interest in both aesthetics and maintainable code quality
+                  </li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="about-grid reveal">
+              <article class="mini-panel">
+                <span class="mini-panel__number">01</span>
+                <h3>Precision</h3>
+                <p>Clear layouts, spacing, and detail-focused execution.</p>
+              </article>
+              <article class="mini-panel">
+                <span class="mini-panel__number">02</span>
+                <h3>Clarity</h3>
+                <p>Interfaces that help users understand what matters fast.</p>
+              </article>
+              <article class="mini-panel">
+                <span class="mini-panel__number">03</span>
+                <h3>Presentation</h3>
+                <p>Design choices that make businesses appear more premium.</p>
+              </article>
+              <article class="mini-panel">
+                <span class="mini-panel__number">04</span>
+                <h3>Growth</h3>
+                <p>Always improving my craft, delivery, and project quality.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- PROOF                                                   -->
+      <!-- ======================================================= -->
+      <section class="section" id="proof">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Why Clients Can Trust My Work</p>
+            <h2>
+              Strong portfolios are not just about looking good. They should
+              also communicate seriousness, clarity, and confidence in
+              execution.
+            </h2>
+          </div>
+
+          <div class="proof-grid">
+            <article class="proof-card reveal">
+              <div class="proof-card__icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h3>Modern Frontend Focus</h3>
+              <p>
+                I build with HTML, CSS, and JavaScript in a way that keeps
+                interfaces clean, fast, and easy to understand.
+              </p>
+            </article>
+
+            <article class="proof-card reveal">
+              <div class="proof-card__icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <h3>Responsive by Default</h3>
+              <p>
+                Good design should hold up across phones, tablets, and desktops,
+                not just on one large screen.
+              </p>
+            </article>
+
+            <article class="proof-card reveal">
+              <div class="proof-card__icon">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <h3>Premium Visual Taste</h3>
+              <p>
+                I pay close attention to typography, spacing, hierarchy, and
+                atmosphere so the work feels more polished.
+              </p>
+            </article>
+
+            <article class="proof-card reveal">
+              <div class="proof-card__icon">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <h3>Business Awareness</h3>
+              <p>
+                Because of my accounting background, I care about practical
+                value, presentation, trust, and professional perception.
+              </p>
+            </article>
+          </div>
+
+          <div class="stats-band reveal">
+            <article class="stats-band__item">
+              <h3 data-counter="100">0</h3>
+              <p>Percent attention to structure and detail</p>
+            </article>
+            <article class="stats-band__item">
+              <h3 data-counter="12">0</h3>
+              <p>Premium page sections crafted in this portfolio</p>
+            </article>
+            <article class="stats-band__item">
+              <h3 data-counter="6">0</h3>
+              <p>Core service directions I can support</p>
+            </article>
+            <article class="stats-band__item">
+              <h3 data-counter="24">0</h3>
+              <p>Hours mindset for learning, building, and refining</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- PROJECTS                                                -->
+      <!-- ======================================================= -->
+      <section class="section section--dark section--projects" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Selected Projects</p>
+            <h2>
+              These projects are presented the way serious clients want to see
+              work: clear problem, strong design thinking, and visible value.
+            </h2>
+          </div>
+
+          <div class="project-stack">
+            <article class="project project--featured reveal">
+              <div class="project__visual project__visual--one tilt-card">
+                <div class="project__overlay">
+                  <span class="project__tag">Featured Project</span>
+                </div>
+              </div>
+              <div class="project__content">
+                <p class="project__index">Project 01</p>
+                <h3>Mock Exam CBT Platform</h3>
+                <p>
+                  A full mock exam experience designed with both student and
+                  admin sides in mind. The project focuses on smooth flow,
+                  timing logic, subject organization, result visibility, and
+                  practical management.
+                </p>
+                <ul class="project__bullets">
+                  <li>Structured admin and student user flows</li>
+                  <li>Professional dashboard direction</li>
+                  <li>Practical question and result handling concept</li>
+                </ul>
+                <div class="project__meta">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Flask Concept</span>
+                </div>
+                <div class="project__actions">
+                  <a href="#" class="btn btn--outline">Live Preview</a>
+                  <a href="#" class="btn btn--ghost">Case Summary</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__visual project__visual--two tilt-card">
+                <div class="project__overlay">
+                  <span class="project__tag">Business UI</span>
+                </div>
+              </div>
+              <div class="project__content">
+                <p class="project__index">Project 02</p>
+                <h3>Premium Portfolio Experience</h3>
+                <p>
+                  A luxury-style personal portfolio built to position the owner
+                  as premium, trustworthy, and client-ready through strong
+                  typography, layered visuals, and modern interaction design.
+                </p>
+                <div class="project__meta">
+                  <span>Responsive UI</span>
+                  <span>Animation</span>
+                  <span>Brand Positioning</span>
+                </div>
+                <div class="project__actions">
+                  <a href="#" class="btn btn--outline">Open Project</a>
+                  <a href="#" class="btn btn--ghost">View Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__visual project__visual--three tilt-card">
+                <div class="project__overlay">
+                  <span class="project__tag">Landing Page</span>
+                </div>
+              </div>
+              <div class="project__content">
+                <p class="project__index">Project 03</p>
+                <h3>Professional Event Flyer Presentation Concept</h3>
+                <p>
+                  A cleaner digital presentation concept centered on spacing,
+                  hierarchy, type choices, and visual professionalism for
+                  educational promotions and event campaigns.
+                </p>
+                <div class="project__meta">
+                  <span>Visual Hierarchy</span>
+                  <span>Marketing Direction</span>
+                  <span>Presentation Quality</span>
+                </div>
+                <div class="project__actions">
+                  <a href="#" class="btn btn--outline">See Layout</a>
+                  <a href="#" class="btn btn--ghost">View Notes</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__visual project__visual--four tilt-card">
+                <div class="project__overlay">
+                  <span class="project__tag">Frontend Build</span>
+                </div>
+              </div>
+              <div class="project__content">
+                <p class="project__index">Project 04</p>
+                <h3>Responsive Business Website Concept</h3>
+                <p>
+                  A polished multi-section website concept for businesses that
+                  need better online credibility, smooth mobile behavior, and
+                  stronger calls to action.
+                </p>
+                <div class="project__meta">
+                  <span>Business Website</span>
+                  <span>Clean Sections</span>
+                  <span>Conversion Direction</span>
+                </div>
+                <div class="project__actions">
+                  <a href="#" class="btn btn--outline">Explore Concept</a>
+                  <a href="#" class="btn btn--ghost">More Info</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__visual project__visual--five tilt-card">
+                <div class="project__overlay">
+                  <span class="project__tag">UI System</span>
+                </div>
+              </div>
+              <div class="project__content">
+                <p class="project__index">Project 05</p>
+                <h3>Admin Dashboard Design Direction</h3>
+                <p>
+                  A dashboard concept focused on clarity, grouping, strong
+                  labels, and a cleaner management experience for task-heavy
+                  business or school systems.
+                </p>
+                <div class="project__meta">
+                  <span>Dashboard</span>
+                  <span>Information Structure</span>
+                  <span>Admin UX</span>
+                </div>
+                <div class="project__actions">
+                  <a href="#" class="btn btn--outline">Preview Screen</a>
+                  <a href="#" class="btn btn--ghost">Read Overview</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__visual project__visual--six tilt-card">
+                <div class="project__overlay">
+                  <span class="project__tag">Personal Brand</span>
+                </div>
+              </div>
+              <div class="project__content">
+                <p class="project__index">Project 06</p>
+                <h3>Personal Brand Website Refresh</h3>
+                <p>
+                  A refreshed personal website direction focused on stronger
+                  messaging, better color balance, premium layout rhythm, and a
+                  more memorable first impression.
+                </p>
+                <div class="project__meta">
+                  <span>Rebranding</span>
+                  <span>UI Refresh</span>
+                  <span>Portfolio Upgrade</span>
+                </div>
+                <div class="project__actions">
+                  <a href="#" class="btn btn--outline">Open Mockup</a>
+                  <a href="#" class="btn btn--ghost">Read Summary</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- SERVICES                                                -->
+      <!-- ======================================================= -->
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Services</p>
+            <h2>
+              I help individuals, brands, and businesses present themselves
+              better online through thoughtful frontend design and cleaner
+              digital experiences.
+            </h2>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3>Portfolio Websites</h3>
+              <p>
+                Custom portfolio websites designed to look stronger, cleaner,
+                and more professional than basic templates.
+              </p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <h3>Business Landing Pages</h3>
+              <p>
+                Focused landing pages that improve presentation, trust, and
+                first impressions for products and businesses.
+              </p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <h3>UI Refresh</h3>
+              <p>
+                Better spacing, color systems, layout hierarchy, and overall
+                visual polish for existing pages that feel weak or outdated.
+              </p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-mobile-alt"></i>
+              </div>
+              <h3>Responsive Optimization</h3>
+              <p>
+                Make websites behave better across mobile, tablet, and desktop
+                without losing design quality.
+              </p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-sliders"></i>
+              </div>
+              <h3>Frontend Component Design</h3>
+              <p>
+                Clean sections, cards, hero blocks, navigation systems, forms,
+                and reusable interface patterns.
+              </p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <h3>Brand Presentation Direction</h3>
+              <p>
+                Improve how your business or profile feels online through
+                layout, words, structure, and visual confidence.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- PROCESS                                                 -->
+      <!-- ======================================================= -->
+      <section class="section section--dark" id="process">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">My Process</p>
+            <h2>
+              Good results usually come from clear steps: understand the goal,
+              design the structure, refine the visuals, and then polish the
+              experience.
+            </h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline__item reveal">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <span class="timeline__step">Step 01</span>
+                <h3>Understand the Goal</h3>
+                <p>
+                  I start by understanding what the site needs to communicate,
+                  who it is for, and what kind of impression it should create.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__item reveal">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <span class="timeline__step">Step 02</span>
+                <h3>Structure the Experience</h3>
+                <p>
+                  I decide the flow of sections, information hierarchy, and how
+                  users should move through the page naturally.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__item reveal">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <span class="timeline__step">Step 03</span>
+                <h3>Design the Visual Language</h3>
+                <p>
+                  Typography, spacing, colors, depth, and cards are refined so
+                  the interface feels more premium and intentional.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__item reveal">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <span class="timeline__step">Step 04</span>
+                <h3>Build and Animate</h3>
+                <p>
+                  The design is then implemented with responsive code, smooth
+                  interactions, and subtle motion for a better feel.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__item reveal">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <span class="timeline__step">Step 05</span>
+                <h3>Refine for Quality</h3>
+                <p>
+                  Final polishing covers readability, responsiveness, spacing
+                  balance, and presentation quality.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- SKILLS                                                  -->
+      <!-- ======================================================= -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Skills & Strengths</p>
+            <h2>
+              My strongest areas are the ones that help pages feel cleaner, more
+              professional, and easier to trust.
+            </h2>
+          </div>
+
+          <div class="skills-layout">
+            <div class="skills-panel reveal">
+              <h3>Core Stack</h3>
+              <div class="skill-bars">
+                <article class="skill-bar">
+                  <div class="skill-bar__label">
+                    <span>HTML</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="skill-bar__track">
+                    <span style="width: 95%"></span>
+                  </div>
+                </article>
+
+                <article class="skill-bar">
+                  <div class="skill-bar__label">
+                    <span>CSS</span>
+                    <span>92%</span>
+                  </div>
+                  <div class="skill-bar__track">
+                    <span style="width: 92%"></span>
+                  </div>
+                </article>
+
+                <article class="skill-bar">
+                  <div class="skill-bar__label">
+                    <span>JavaScript</span>
+                    <span>82%</span>
+                  </div>
+                  <div class="skill-bar__track">
+                    <span style="width: 82%"></span>
+                  </div>
+                </article>
+
+                <article class="skill-bar">
+                  <div class="skill-bar__label">
+                    <span>Responsive Design</span>
+                    <span>93%</span>
+                  </div>
+                  <div class="skill-bar__track">
+                    <span style="width: 93%"></span>
+                  </div>
+                </article>
+
+                <article class="skill-bar">
+                  <div class="skill-bar__label">
+                    <span>UI Layout</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill-bar__track">
+                    <span style="width: 90%"></span>
+                  </div>
+                </article>
+
+                <article class="skill-bar">
+                  <div class="skill-bar__label">
+                    <span>Visual Polish</span>
+                    <span>88%</span>
+                  </div>
+                  <div class="skill-bar__track">
+                    <span style="width: 88%"></span>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="skills-tags reveal">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+              <span>Portfolio UI</span>
+              <span>Landing Pages</span>
+              <span>Forms</span>
+              <span>Animations</span>
+              <span>Flexbox</span>
+              <span>Grid</span>
+              <span>Clean Structure</span>
+              <span>Typography</span>
+              <span>Color Balance</span>
+              <span>Business Presentation</span>
+              <span>Frontend Thinking</span>
+              <span>Visual Hierarchy</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- TESTIMONIAL / PRINCIPLES                                -->
+      <!-- ======================================================= -->
+      <section class="section section--quote">
+        <div class="container">
+          <div class="quote-panel reveal">
+            <p class="quote-panel__text">
+              “The best websites do more than show information. They make people
+              feel that the brand behind them is serious, capable, and worth
+              paying attention to.”
+            </p>
+            <span class="quote-panel__author">— Kenny’s design principle</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- FAQ                                                     -->
+      <!-- ======================================================= -->
+      <section class="section section--dark" id="faq">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">FAQ</p>
+            <h2>
+              A few quick answers that help explain how I think about frontend
+              work, quality, and collaboration.
+            </h2>
+          </div>
+
+          <div class="faq-list">
+            <article class="faq-item reveal">
+              <button class="faq-question" type="button">
+                <span>What type of websites do you focus on most?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  I’m strongest when working on portfolios, landing pages,
+                  business websites, and interfaces that need better visual
+                  polish, clearer structure, and stronger first impressions.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item reveal">
+              <button class="faq-question" type="button">
+                <span>Why does your accounting background matter?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  It trained me to care about order, consistency, detail, and
+                  practical thinking. Those habits transfer very well into
+                  frontend design and clean interface building.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item reveal">
+              <button class="faq-question" type="button">
+                <span>Do you care more about looks or usability?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Both matter. A site should look premium, but it should also be
+                  clear, smooth, responsive, and easy to understand.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item reveal">
+              <button class="faq-question" type="button">
+                <span
+                  >Can you improve an existing design instead of starting
+                  fresh?</span
+                >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. I can help refresh layout structure, spacing, hierarchy,
+                  cards, colors, and overall presentation quality.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- CONTACT                                                 -->
+      <!-- ======================================================= -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>
+              If you want a cleaner, more premium online presence, let’s talk
+              about the kind of website you need.
+            </h2>
+          </div>
+
+          <div class="contact-layout">
+            <div class="contact-info reveal">
+              <article class="contact-panel">
+                <h3>Let’s Build Something Better</h3>
+                <p>
+                  I’m open to freelance projects, collaborations, portfolio
+                  upgrades, business site improvements, and frontend-focused
+                  opportunities.
+                </p>
+
+                <div class="contact-links">
+                  <a href="olugbusikehinde01@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>olugbusikehinde01@gmail.com</span>
+                  </a>
+                  <a href="tel:+2347079524939">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+234 70 795 2493 9</span>
+                  </a>
+                  <a
+                    href="https://github.com/KennyRichard-TechMaster/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub Profile</span>
+                  </a>
+                  <a
+                    href="linkedin.com/in/kehinde-olugbusi-97a9a2347"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn Profile</span>
+                  </a>
+                </div>
+              </article>
+
+              <article class="availability-card">
+                <div class="availability-card__dot"></div>
+                <div>
+                  <h4>Currently Available</h4>
+                  <p>
+                    Open to frontend jobs, remote roles, and selected freelance
+                    work.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <form class="contact-form reveal" id="contactForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="OLUGBUSI KEHINDE RICHARD"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="emailAddress">Email</label>
+                  <input
+                    type="email"
+                    id="emailAddress"
+                    name="emailAddress"
+                    placeholder="olugbusikehinde01@gmail.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="projectType">Project Type</label>
+                  <select id="projectType" name="projectType">
+                    <option value="">Select a project type</option>
+                    <option>Portfolio Website</option>
+                    <option>Landing Page</option>
+                    <option>Business Website</option>
+                    <option>UI Refresh</option>
+                    <option>Frontend Help</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="budget">Budget Range</label>
+                  <select id="budget" name="budget">
+                    <option value="">Select budget</option>
+                    <option>Basic</option>
+                    <option>Standard</option>
+                    <option>Premium</option>
+                    <option>Not sure yet</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Project Details</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="7"
+                  placeholder="Tell me what you want to build or improve"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full">
+                Send Message
+              </button>
+              <p class="form-note" id="formMessage" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- FOOTER                                                    -->
+    <!-- ========================================================= -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__content">
+          <p>© 2026 Kenny Richard. All rights reserved.</p>
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========================================================= -->
+    <!-- SCRIPT                                                    -->
+    <!-- ========================================================= -->
+    <script src="script.js"></script>
+  </body>
+</html>
