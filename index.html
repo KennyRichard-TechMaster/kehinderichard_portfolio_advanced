@@ -257,10 +257,44 @@
         <div class="container">
           <div class="section-heading reveal">
             <p class="eyebrow">About Me</p>
-            <h2>
-              I moved from accounting into tech, and that shift gave me a unique
-              edge: structure, patience, attention to detail, and a stronger
-              focus on practical results.
+          </div>
+
+          <div
+            class="reveal"
+            style="
+              display: flex;
+              align-items: center;
+              gap: 40px;
+              flex-wrap: wrap;
+              margin-bottom: 40px;
+            "
+          >
+            <img
+              src="./images/About img kenny.jpeg"
+              alt="Kenny"
+              style="
+                width: 220px;
+                height: 260px;
+                object-fit: cover;
+                border-radius: 24px;
+                border: 2px solid rgba(255, 255, 255, 0.1);
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+              "
+            />
+
+            <!-- NAME -->
+            <h2
+              style="
+                font-size: clamp(2.8rem, 5vw, 4.5rem);
+                font-weight: 900;
+                line-height: 1.1;
+                background: linear-gradient(90deg, #d4af37, #ffffff, #d4af37);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: shine 4s linear infinite;
+              "
+            >
+              Olugbusi Kehinde Richard
             </h2>
           </div>
 
@@ -421,11 +455,140 @@
 
           <div class="project-stack">
             <article class="project project--featured reveal">
-              <div class="project__visual project__visual--one tilt-card">
-                <div class="project__overlay">
-                  <span class="project__tag">Featured Project</span>
+              <div
+                class="project__visual tilt-card"
+                style="
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 26px;
+                  min-height: 340px;
+                  background: #0b0f16;
+                  border: 1px solid rgba(255, 255, 255, 0.08);
+                  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+                "
+              >
+                <img
+                  src="./images/image1.png"
+                  alt="Mock Exam CBT Platform Preview"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    min-height: 340px;
+                    object-fit: cover;
+                    display: block;
+                    transform: scale(1.02);
+                    transition:
+                      transform 0.7s ease,
+                      filter 0.7s ease;
+                    filter: brightness(0.88) contrast(1.05);
+                  "
+                  onmouseover="
+                    this.style.transform = 'scale(1.08)';
+                    this.style.filter = 'brightness(0.98) contrast(1.08)';
+                  "
+                  onmouseout="
+                    this.style.transform = 'scale(1.02)';
+                    this.style.filter = 'brightness(0.88) contrast(1.05)';
+                  "
+                />
+
+                <div
+                  style="
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(
+                      to top,
+                      rgba(5, 7, 10, 0.72),
+                      rgba(5, 7, 10, 0.08),
+                      rgba(5, 7, 10, 0.02)
+                    );
+                    pointer-events: none;
+                  "
+                ></div>
+
+                <div
+                  class="project__overlay"
+                  style="
+                    position: absolute;
+                    inset: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    padding: 18px;
+                  "
+                >
+                  <span
+                    class="project__tag"
+                    style="
+                      display: inline-flex;
+                      align-items: center;
+                      min-height: 38px;
+                      padding: 0 14px;
+                      border-radius: 999px;
+                      background: rgba(10, 12, 18, 0.55);
+                      border: 1px solid rgba(255, 255, 255, 0.1);
+                      backdrop-filter: blur(10px);
+                      color: #fff;
+                      font-size: 0.84rem;
+                      font-weight: 700;
+                      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+                    "
+                  >
+                    Featured Project
+                  </span>
+                </div>
+
+                <div
+                  style="
+                    position: absolute;
+                    left: 18px;
+                    right: 18px;
+                    bottom: 18px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: end;
+                    gap: 14px;
+                    z-index: 2;
+                  "
+                >
+                  <div
+                    style="
+                      max-width: 70%;
+                      padding: 14px 16px;
+                      border-radius: 18px;
+                      background: rgba(10, 12, 18, 0.45);
+                      border: 1px solid rgba(255, 255, 255, 0.08);
+                      backdrop-filter: blur(10px);
+                      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0 0 6px;
+                        font-size: 0.78rem;
+                        text-transform: uppercase;
+                        letter-spacing: 0.14em;
+                        color: #efd49d;
+                        font-weight: 700;
+                      "
+                    >
+                      Student + Admin Experience
+                    </p>
+                    <p
+                      style="
+                        margin: 0;
+                        color: rgba(255, 255, 255, 0.9);
+                        font-size: 0.92rem;
+                        line-height: 1.55;
+                      "
+                    >
+                      Responsive exam flow, cleaner interface structure, and
+                      practical management direction.
+                    </p>
+                  </div>
                 </div>
               </div>
+
               <div class="project__content">
                 <p class="project__index">Project 01</p>
                 <h3>Mock Exam CBT Platform</h3>
@@ -450,23 +613,148 @@
                   <a
                     href="https://mock-exams-33b6.onrender.com/"
                     class="btn btn--outline"
-                    >Live Preview</a
+                    target="_blank"
+                    rel="noreferrer"
                   >
+                    Live Preview
+                  </a>
                   <a
                     href="https://mock-exams-33b6.onrender.com/"
                     class="btn btn--ghost"
-                    >Case Summary</a
+                    target="_blank"
+                    rel="noreferrer"
                   >
+                    Case Summary
+                  </a>
                 </div>
               </div>
             </article>
 
             <article class="project reveal">
-              <div class="project__visual project__visual--two tilt-card">
-                <div class="project__overlay">
-                  <span class="project__tag">Business UI</span>
+              <div
+                class="project__visual tilt-card"
+                style="
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 26px;
+                  min-height: 340px;
+                  background: #0b0f16;
+                  border: 1px solid rgba(255, 255, 255, 0.08);
+                  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+                "
+              >
+                <!-- 🔥 PROJECT IMAGE -->
+                <img
+                  src="./images/image2.png"
+                  alt="Tech School Registration System"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    min-height: 340px;
+                    object-fit: cover;
+                    display: block;
+                    transform: scale(1.02);
+                    transition:
+                      transform 0.7s ease,
+                      filter 0.7s ease;
+                    filter: brightness(0.88) contrast(1.05);
+                  "
+                  onmouseover="
+                    this.style.transform = 'scale(1.08)';
+                    this.style.filter = 'brightness(0.98) contrast(1.08)';
+                  "
+                  onmouseout="
+                    this.style.transform = 'scale(1.02)';
+                    this.style.filter = 'brightness(0.88) contrast(1.05)';
+                  "
+                />
+
+                <!-- 🔥 DARK GRADIENT OVERLAY -->
+                <div
+                  style="
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(
+                      to top,
+                      rgba(5, 7, 10, 0.75),
+                      rgba(5, 7, 10, 0.1),
+                      transparent
+                    );
+                    pointer-events: none;
+                  "
+                ></div>
+
+                <!-- 🔥 TOP TAG -->
+                <div
+                  class="project__overlay"
+                  style="
+                    position: absolute;
+                    inset: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    padding: 18px;
+                  "
+                >
+                  <span
+                    class="project__tag"
+                    style="
+                      padding: 8px 14px;
+                      border-radius: 999px;
+                      background: rgba(10, 12, 18, 0.6);
+                      border: 1px solid rgba(255, 255, 255, 0.1);
+                      backdrop-filter: blur(10px);
+                      color: #fff;
+                      font-size: 0.82rem;
+                      font-weight: 700;
+                    "
+                  >
+                    Business UI
+                  </span>
+
+                  <span
+                    style="
+                      padding: 8px 14px;
+                      border-radius: 999px;
+                      background: rgba(212, 175, 55, 0.2);
+                      border: 1px solid rgba(212, 175, 55, 0.4);
+                      color: #f5d76e;
+                      font-size: 0.8rem;
+                      font-weight: 700;
+                    "
+                  >
+                    Form System
+                  </span>
+                </div>
+
+                <!-- 🔥 BOTTOM INFO PANEL -->
+                <div
+                  style="
+                    position: absolute;
+                    left: 18px;
+                    right: 18px;
+                    bottom: 18px;
+                    z-index: 2;
+                  "
+                >
+                  <div
+                    style="
+                      padding: 14px;
+                      border-radius: 16px;
+                      background: rgba(10, 12, 18, 0.5);
+                      border: 1px solid rgba(255, 255, 255, 0.08);
+                      backdrop-filter: blur(10px);
+                    "
+                  >
+                    <p style="margin: 0; font-size: 0.9rem; color: #fff">
+                      Smooth student registration flow with clean UI and
+                      validation.
+                    </p>
+                  </div>
                 </div>
               </div>
+
+              <!-- 🔥 CONTENT -->
               <div class="project__content">
                 <p class="project__index">Project 02</p>
                 <h3>Tech School Registration System (Online Form Platform)</h3>
@@ -477,126 +765,351 @@
                   while ensuring proper data collection, validation, and
                   usability across devices.
                 </p>
+
                 <div class="project__meta">
                   <span>Enrollment UI</span>
                   <span>Admission</span>
                   <span>Smart Registration System</span>
                 </div>
+
                 <div class="project__actions">
                   <a
                     href="https://waotech-form.onrender.com/"
                     class="btn btn--outline"
-                    >Open Project</a
+                    target="_blank"
                   >
+                    Open Project
+                  </a>
+
                   <a
                     href="https://waotech-form.onrender.com/"
                     class="btn btn--ghost"
-                    >View Details</a
+                    target="_blank"
                   >
+                    View Details
+                  </a>
                 </div>
               </div>
             </article>
 
             <article class="project reveal">
-              <div class="project__visual project__visual--three tilt-card">
-                <div class="project__overlay">
-                  <span class="project__tag">Landing Page</span>
+              <div
+                class="project__visual tilt-card"
+                style="
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 26px;
+                  min-height: 340px;
+                  background: #0b0f16;
+                  border: 1px solid rgba(255, 255, 255, 0.08);
+                  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+                "
+              >
+                <!-- 🔥 PROJECT IMAGE -->
+                <img
+                  src="./images/image3.png"
+                  alt="First Portfolio Project"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    min-height: 340px;
+                    object-fit: cover;
+                    display: block;
+                    transform: scale(1.02);
+                    transition:
+                      transform 0.7s ease,
+                      filter 0.7s ease;
+                    filter: brightness(0.88) contrast(1.05);
+                  "
+                  onmouseover="
+                    this.style.transform = 'scale(1.08)';
+                    this.style.filter = 'brightness(0.98) contrast(1.08)';
+                  "
+                  onmouseout="
+                    this.style.transform = 'scale(1.02)';
+                    this.style.filter = 'brightness(0.88) contrast(1.05)';
+                  "
+                />
+
+                <!-- 🔥 GRADIENT OVERLAY -->
+                <div
+                  style="
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(
+                      to top,
+                      rgba(5, 7, 10, 0.75),
+                      rgba(5, 7, 10, 0.1),
+                      transparent
+                    );
+                    pointer-events: none;
+                  "
+                ></div>
+
+                <!-- 🔥 TOP TAG -->
+                <div
+                  class="project__overlay"
+                  style="
+                    position: absolute;
+                    inset: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    padding: 18px;
+                  "
+                >
+                  <span
+                    class="project__tag"
+                    style="
+                      padding: 8px 14px;
+                      border-radius: 999px;
+                      background: rgba(10, 12, 18, 0.6);
+                      border: 1px solid rgba(255, 255, 255, 0.1);
+                      backdrop-filter: blur(10px);
+                      color: #fff;
+                      font-size: 0.82rem;
+                      font-weight: 700;
+                    "
+                  >
+                    Personal Project
+                  </span>
+
+                  <span
+                    style="
+                      padding: 8px 14px;
+                      border-radius: 999px;
+                      background: rgba(212, 175, 55, 0.2);
+                      border: 1px solid rgba(212, 175, 55, 0.4);
+                      color: #f5d76e;
+                      font-size: 0.8rem;
+                      font-weight: 700;
+                    "
+                  >
+                    First Build
+                  </span>
+                </div>
+
+                <!-- 🔥 BOTTOM INFO -->
+                <div
+                  style="
+                    position: absolute;
+                    left: 18px;
+                    right: 18px;
+                    bottom: 18px;
+                    z-index: 2;
+                  "
+                >
+                  <div
+                    style="
+                      padding: 14px;
+                      border-radius: 16px;
+                      background: rgba(10, 12, 18, 0.5);
+                      border: 1px solid rgba(255, 255, 255, 0.08);
+                      backdrop-filter: blur(10px);
+                    "
+                  >
+                    <p style="margin: 0; font-size: 0.9rem; color: #fff">
+                      My first portfolio project — where I started learning
+                      structure, layout, and styling.
+                    </p>
+                  </div>
                 </div>
               </div>
+
+              <!-- 🔥 CONTENT -->
               <div class="project__content">
                 <p class="project__index">Project 03</p>
-                <h3>Professional Event Flyer Presentation Concept</h3>
+
+                <h3>My First Portfolio Website</h3>
+
                 <p>
-                  A cleaner digital presentation concept centered on spacing,
-                  hierarchy, type choices, and visual professionalism for
-                  educational promotions and event campaigns.
+                  This was one of my earliest projects when I started learning
+                  frontend development. It helped me understand layout
+                  structure, styling, responsiveness, and how to present content
+                  clearly on a webpage.
                 </p>
+
                 <div class="project__meta">
-                  <span>Visual Hierarchy</span>
-                  <span>Marketing Direction</span>
-                  <span>Presentation Quality</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Beginner UI</span>
                 </div>
+
                 <div class="project__actions">
-                  <a href="#" class="btn btn--outline">See Layout</a>
-                  <a href="#" class="btn btn--ghost">View Notes</a>
+                  <a
+                    href="kennyrichard-techmaster.github.io/scratch-project/"
+                    class="btn btn--outline"
+                    target="_blank"
+                  >
+                    View Project
+                  </a>
+
+                  <a
+                    href="kennyrichard-techmaster.github.io/scratch-project/"
+                    class="btn btn--ghost"
+                    target="_blank"
+                  >
+                    Details
+                  </a>
                 </div>
               </div>
             </article>
 
             <article class="project reveal">
-              <div class="project__visual project__visual--four tilt-card">
-                <div class="project__overlay">
-                  <span class="project__tag">Frontend Build</span>
+              <div
+                class="project__visual tilt-card"
+                style="
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 26px;
+                  min-height: 340px;
+                  background: #0b0f16;
+                  border: 1px solid rgba(255, 255, 255, 0.08);
+                  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+                "
+              >
+                <!-- 🔥 TEMP IMAGE (you can change later) -->
+                <img
+                  src="./images/image4.png"
+                  alt="Foundation Website Concept"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    min-height: 340px;
+                    object-fit: cover;
+                    display: block;
+                    transform: scale(1.02);
+                    transition:
+                      transform 0.7s ease,
+                      filter 0.7s ease;
+                    filter: brightness(0.85) contrast(1.05);
+                  "
+                  onmouseover="
+                    this.style.transform = 'scale(1.08)';
+                    this.style.filter = 'brightness(0.95)';
+                  "
+                  onmouseout="
+                    this.style.transform = 'scale(1.02)';
+                    this.style.filter = 'brightness(0.85)';
+                  "
+                />
+
+                <!-- 🔥 DARK OVERLAY -->
+                <div
+                  style="
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(
+                      to top,
+                      rgba(5, 7, 10, 0.8),
+                      rgba(5, 7, 10, 0.2),
+                      transparent
+                    );
+                    pointer-events: none;
+                  "
+                ></div>
+
+                <!-- 🔥 TAGS -->
+                <div
+                  style="
+                    position: absolute;
+                    inset: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    padding: 18px;
+                  "
+                >
+                  <span
+                    style="
+                      padding: 8px 14px;
+                      border-radius: 999px;
+                      background: rgba(10, 12, 18, 0.6);
+                      border: 1px solid rgba(255, 255, 255, 0.1);
+                      color: #fff;
+                      font-size: 0.8rem;
+                      font-weight: 700;
+                    "
+                  >
+                    Social Impact
+                  </span>
+
+                  <span
+                    style="
+                      padding: 8px 14px;
+                      border-radius: 999px;
+                      background: rgba(212, 175, 55, 0.2);
+                      border: 1px solid rgba(212, 175, 55, 0.4);
+                      color: #f5d76e;
+                      font-size: 0.8rem;
+                      font-weight: 700;
+                    "
+                  >
+                    ACTIVE
+                  </span>
+                </div>
+
+                <!-- 🔥 BOTTOM INFO -->
+                <div
+                  style="
+                    position: absolute;
+                    left: 18px;
+                    right: 18px;
+                    bottom: 18px;
+                    z-index: 2;
+                  "
+                >
+                  <div
+                    style="
+                      padding: 14px;
+                      border-radius: 16px;
+                      background: rgba(10, 12, 18, 0.5);
+                      border: 1px solid rgba(255, 255, 255, 0.08);
+                      backdrop-filter: blur(10px);
+                    "
+                  >
+                    <p style="margin: 0; font-size: 0.9rem; color: #fff">
+                      A modern platform aimed at supporting and empowering
+                      children through impactful initiatives.
+                    </p>
+                  </div>
                 </div>
               </div>
+
+              <!-- 🔥 CONTENT -->
               <div class="project__content">
                 <p class="project__index">Project 04</p>
-                <h3>Responsive Business Website Concept</h3>
-                <p>
-                  A polished multi-section website concept for businesses that
-                  need better online credibility, smooth mobile behavior, and
-                  stronger calls to action.
-                </p>
-                <div class="project__meta">
-                  <span>Business Website</span>
-                  <span>Clean Sections</span>
-                  <span>Conversion Direction</span>
-                </div>
-                <div class="project__actions">
-                  <a href="#" class="btn btn--outline">Explore Concept</a>
-                  <a href="#" class="btn btn--ghost">More Info</a>
-                </div>
-              </div>
-            </article>
 
-            <article class="project reveal">
-              <div class="project__visual project__visual--five tilt-card">
-                <div class="project__overlay">
-                  <span class="project__tag">UI System</span>
-                </div>
-              </div>
-              <div class="project__content">
-                <p class="project__index">Project 05</p>
-                <h3>Admin Dashboard Design Direction</h3>
-                <p>
-                  A dashboard concept focused on clarity, grouping, strong
-                  labels, and a cleaner management experience for task-heavy
-                  business or school systems.
-                </p>
-                <div class="project__meta">
-                  <span>Dashboard</span>
-                  <span>Information Structure</span>
-                  <span>Admin UX</span>
-                </div>
-                <div class="project__actions">
-                  <a href="#" class="btn btn--outline">Preview Screen</a>
-                  <a href="#" class="btn btn--ghost">Read Overview</a>
-                </div>
-              </div>
-            </article>
+                <h3>Children Support Foundation Website</h3>
 
-            <article class="project reveal">
-              <div class="project__visual project__visual--six tilt-card">
-                <div class="project__overlay">
-                  <span class="project__tag">Personal Brand</span>
-                </div>
-              </div>
-              <div class="project__content">
-                <p class="project__index">Project 06</p>
-                <h3>Personal Brand Website Refresh</h3>
                 <p>
-                  A refreshed personal website direction focused on stronger
-                  messaging, better color balance, premium layout rhythm, and a
-                  more memorable first impression.
+                  This upcoming project focuses on building a clean and
+                  impactful website for a foundation dedicated to supporting
+                  children. The goal is to create a platform that communicates
+                  purpose clearly, builds trust, and makes it easy for people to
+                  support the mission.
                 </p>
+
                 <div class="project__meta">
-                  <span>Rebranding</span>
-                  <span>UI Refresh</span>
-                  <span>Portfolio Upgrade</span>
+                  <span>NGO Website</span>
+                  <span>Donation Flow</span>
+                  <span>Impact Design</span>
                 </div>
+
                 <div class="project__actions">
-                  <a href="#" class="btn btn--outline">Open Mockup</a>
-                  <a href="#" class="btn btn--ghost">Read Summary</a>
+                  <a
+                    href="https://gracy-world-initiative.onrender.com/founder"
+                    class="btn btn--outline"
+                  >
+                    In Progress
+                  </a>
+
+                  <a
+                    href="https://gracy-world-initiative.onrender.com/founder"
+                    class="btn btn--ghost"
+                  >
+                    Concept
+                  </a>
                 </div>
               </div>
             </article>

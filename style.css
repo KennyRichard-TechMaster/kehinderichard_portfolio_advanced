@@ -2111,4 +2111,24 @@ select:focus-visible {
   .project {
     grid-template-columns: 1fr !important;
   }
+  @media (max-width: 900px) {
+    .project__visual[style] {
+      min-height: 280px !important;
+    }
+
+    .project__visual img[alt="Mock Exam CBT Platform Preview"] {
+      min-height: 280px !important;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .project__visual[style] {
+      min-height: 240px !important;
+      border-radius: 20px !important;
+    }
+
+    .project__visual img[alt="Mock Exam CBT Platform Preview"] {
+      min-height: 240px !important;
+    }
+  }
 }
