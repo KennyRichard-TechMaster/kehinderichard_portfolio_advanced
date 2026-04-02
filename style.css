@@ -71,9 +71,14 @@ body {
   background: var(--gradient-hero);
   font-family: var(--font-body);
   overflow-x: hidden;
-  cursor: none;
+  cursor: default;
 }
-
+a,
+button,
+.glass-card,
+.showcase-item {
+  cursor: pointer;
+}
 body.nav-open {
   overflow: hidden;
 }
@@ -85,14 +90,14 @@ video {
   max-width: 100%;
 }
 
-a,
+/* a,
 button,
 input,
 textarea,
 select {
   font: inherit;
   cursor: none;
-}
+} */
 
 button {
   border: 0;
@@ -169,7 +174,7 @@ select {
   z-index: 99999;
 }
 
-.cursor-dot,
+/* .cursor-dot,
 .cursor-ring {
   position: fixed;
   top: 0;
@@ -195,7 +200,7 @@ select {
     height var(--transition-base),
     border-color var(--transition-base),
     transform 0.12s ease;
-}
+} */
 
 .page-loader {
   position: fixed;
@@ -2061,90 +2066,109 @@ select:focus-visible {
 .shadow-accent-strong {
   box-shadow: 0 28px 80px rgba(198, 162, 87, 0.16);
 }
-.design-layout {
-  position: relative;
-  height: 500px;
-  width: 100%;
-  border-radius: 30px;
-  overflow: hidden;
-  background: #0b0f16;
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
 }
 
-/* GENERAL IMAGE STYLE */
-.img {
-  position: absolute;
-  object-fit: cover;
-  transition: all 0.6s ease;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+/* CARD */
+.showcase-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
   cursor: pointer;
 }
 
-/* DIFFERENT SHAPES */
-.img1 {
-  width: 38%;
-  height: 80%;
-  top: 10%;
-  left: 2%;
-  border-radius: 30px;
-}
-
-.img2 {
-  width: 26%;
-  height: 45%;
-  top: 5%;
-  left: 42%;
-  border-radius: 50%;
-}
-
-.img3 {
-  width: 28%;
-  height: 60%;
-  bottom: 5%;
-  left: 42%;
-  border-radius: 20px;
-}
-
-.img4 {
-  width: 22%;
-  height: 40%;
-  top: 8%;
-  right: 3%;
-  border-radius: 50% 20px 50% 20px;
-}
-
-.img5 {
-  width: 26%;
-  height: 50%;
-  bottom: 5%;
-  right: 3%;
-  border-radius: 20px 50% 20px 50%;
+/* IMAGE */
+.showcase-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.6s ease;
 }
 
 /* HOVER EFFECT */
-.img:hover {
-  transform: scale(1.08);
-  z-index: 10;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8);
+.showcase-item:hover img {
+  transform: scale(1.1);
 }
 
-/* SOFT ANIMATION (FLOATING EFFECT) */
-@keyframes float1 {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+/* OVERLAY */
+.showcase-item::after {
+  content: "View Design";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  text-align: center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: #fff;
+  opacity: 0;
+  transition: 0.4s;
 }
 
-@keyframes float2 {
-  0%,
-  100% {
-    transform: translateY(0);
+.showcase-item:hover::after {
+  opacity: 1;
+}
+
+/* MODAL */
+.image-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.95);
+
+  /* PREMIUM ANIMATION */
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.4s ease;
+}
+
+.modal-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 16px;
+
+  box-shadow: 0 40px 120px rgba(0, 0, 0, 0.9);
+
+  transition: transform 0.4s ease;
+}
+/* CLOSE BUTTON */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.close:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+.showcase-item img,
+.glass-card img {
+  will-change: transform;
+}
+
+/* ANIMATION */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
   }
-  50% {
-    transform: translateY(12px);
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 .design-content {
@@ -2191,7 +2215,7 @@ select:focus-visible {
   font-size: 13px;
 }
 
-.img1 {
+/* .img1 {
   animation: float1 6s ease-in-out infinite;
 }
 .img2 {
@@ -2205,7 +2229,7 @@ select:focus-visible {
 }
 .img5 {
   animation: float1 7s ease-in-out infinite;
-}
+} */
 /* Print hints */
 @media print {
   body {
